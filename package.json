@@ -1,0 +1,64 @@
+{
+  "name": "@vue-a11y/vlibras",
+  "version": "0.0.1",
+  "description": "Componente Vue.js que ajuda você a implementar o VLibras no seu site.",
+  "main": "dist/vue-vlibras.ssr.js",
+  "browser": "dist/vue-vlibras.esm.js",
+  "module": "dist/vue-vlibras.esm.js",
+  "unpkg": "dist/vue-vlibras.min.js",
+  "scripts": {
+    "dev": "rollup --config rollup.config.dev.js --watch",
+    "build": "run-s build:*",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js --format cjs --file dist/vue-vlibras.ssr.js",
+    "build:es": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js --format es --file dist/vue-vlibras.esm.js",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.prod.js --format iife --file dist/vue-vlibras.min.js",
+    "demo:dev": "cd demo && npm run serve",
+    "demo:build": "cd demo && npm run build",
+    "demo:publish": "cp ./demo/dist/index.html ./demo/dist/200.html && surge ./demo/dist https://vue-vlibras.surge.sh/",
+    "release": "standard-version",
+    "project:publish": "git push --tags origin master && npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-a11y/vue-vlibras.git"
+  },
+  "keywords": [
+    "vlibras",
+    "libras",
+    "vue.js",
+    "a11y",
+    "acessibilidade",
+    "surdo",
+    "deficiente",
+    "auditivo"
+  ],
+  "author": "Alan Ktquez <ktquez@gmail.com> (https://ktquez.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vue-a11y/vue-vlibras/issues"
+  },
+  "homepage": "https://github.com/vue-a11y/vue-vlibras#readme",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^7.0.1",
+    "eslint-plugin-vuejs-accessibility": "^0.5.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.30.0",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-vue": "^5.1.9",
+    "standard-version": "^9.0.0",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
