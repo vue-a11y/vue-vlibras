@@ -16,7 +16,7 @@
     "demo:build": "cd demo && npm run build",
     "demo:publish": "cp ./demo/dist/index.html ./demo/dist/200.html && surge ./demo/dist https://vue-vlibras.surge.sh/",
     "release": "standard-version",
-    "project:publish": "git push --tags origin master && npm run build && npm publish --access public"
+    "project:publish": "git push --tags origin main && npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
