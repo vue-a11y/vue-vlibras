@@ -1,5 +1,5 @@
 # vlibras
-Componente Vue.js que ajuda você a implementar o VLibras no seu site
+Componente Vue.js que ajuda você a implementar o VLibras no seu site.
 
 Esse componente segue os padrões fornecidos na [documentação do vlibras](https://www.vlibras.gov.br/doc/widget/index.html).
 
