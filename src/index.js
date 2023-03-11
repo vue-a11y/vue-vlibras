@@ -1,4 +1,5 @@
-import VLibrasPlugin from './plugin'
+import VLibras from './plugin'
 
-export default VLibrasPlugin
-export { default as VLibras } from './VLibras.vue'
+export default VLibras
+
+export { default as VLibrasComponent } from './VLibras.vue'
