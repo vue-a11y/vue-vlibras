@@ -18,7 +18,7 @@ yarn add @vue-a11y/vlibras@next
 ```js
 import { createApp } from 'vue'
 import App from './App.vue'
-import VLibras from '../../src'
+import VLibras from '@vue-a11y/vlibras'
 
 createApp(App)
   .use(VLibras)
