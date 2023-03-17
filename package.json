@@ -1,8 +1,10 @@
 {
   "name": "@vue-a11y/vlibras",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-vlibras.umd.cjs",
   "module": "./dist/vue-vlibras.js",
   "exports": {
