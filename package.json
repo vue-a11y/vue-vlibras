@@ -1,18 +1,32 @@
 {
   "name": "@vue-a11y/vlibras",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue-vlibras.umd.cjs",
+  "module": "./dist/vue-vlibras.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-vlibras.js",
+      "require": "./dist/vue-vlibras.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "demo:dev": "cd demo && vite",
+    "demo:build": "cd demo && vite build",
+    "demo:publish": "surge ./demo/dist https://vue3-vlibras.surge.sh/",
+    "release": "standard-version",
+    "project:publish": "git push --tags origin next && yarn build && npm publish --access public --tag next"
   },
   "dependencies": {
+    "standard-version": "^9.5.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "unplugin-auto-import": "^0.15.1",
     "vite": "^4.1.0"
   }
 }

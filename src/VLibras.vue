@@ -10,7 +10,7 @@
 
 <script setup>
 const name = "VLibras"
-let script = ref()
+let script = ref(null)
 
 const props = defineProps({
   src: {
