@@ -1,5 +1,7 @@
-# vlibras
+# vlibras (Para Vue3)
 Componente Vue.js que ajuda você a implementar o VLibras no seu site.
+
+Demo: https://vue3-vlibras.surge.sh/
 
 Esse componente segue os padrões fornecidos na [documentação do vlibras](https://www.vlibras.gov.br/doc/widget/index.html).
 
@@ -8,36 +10,37 @@ Esse componente segue os padrões fornecidos na [documentação do vlibras](http
 ## Instalação
 
 ```shell
-npm install -S @vue-a11y/vlibras
+npm install -S @vue-a11y/vlibras@next
 # or
-yarn add @vue-a11y/vlibras
+yarn add @vue-a11y/vlibras@next
 ``` 
+
+```js
+import { createApp } from 'vue'
+import App from './App.vue'
+import VLibras from '../../src'
+
+createApp(App)
+  .use(VLibras)
+  .mount('#app')
+```
 
 ## Como usar
 No seu App.vue
 
 ```vue
 <template>
-  <div id="app">
-    <!-- header, navigation, and more -->
-    <main id="main">
-      <!-- content -->
-    </main>
-    <VLibras />
+  <div>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
   </div>
+  <HelloWorld msg="Vite + Vue" />
+  <VLibras />
 </template>
-
-<script>
-import { VLibras } from '@vue-a11y/vlibras'
-
-export default {
-  name: 'App'
-  components: {
-    VLibras
-  },
-  //...
-}
-</script>
 ```
 
 ## Contribuindo
