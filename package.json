@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "standard-version": "^9.5.0",
-    "vue": "^3.2.45"
+    "vue": "^3.4.23"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "unplugin-auto-import": "^0.15.1",
-    "vite": "^4.1.0"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "unplugin-auto-import": "^0.17.5",
+    "vite": "^5.2.9"
   }
 }
