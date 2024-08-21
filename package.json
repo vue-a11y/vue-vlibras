@@ -33,6 +33,13 @@
     "auditivo"
   ],
   "author": "Alan Ktquez <ktquez@gmail.com> (https://ktquez.dev)",
+  "contributors": [
+    {
+      "name": "Lucas Ferreira",
+      "email": "lucasferreiralimax@gmail.com",
+      "url": "https://github.com/lucasferreiralimax"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vue-a11y/vue-vlibras/issues"
