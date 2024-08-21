@@ -41,7 +41,7 @@ export default {
       script = document.createElement('script')
       script.addEventListener('load', this.createWidget)
       script.src = this.src
-      document.querySelector('body').appendChild(script)
+      document.body.appendChild(script)
     },
 
     createWidget () {
