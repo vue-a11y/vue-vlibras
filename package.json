@@ -1,7 +1,10 @@
 {
   "name": "@vue-a11y/vlibras",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Componente Vue.js que ajuda você a implementar o VLibras no seu site.",
+  "files": [
+    "dist"
+  ],
   "main": "dist/vue-vlibras.ssr.js",
   "browser": "dist/vue-vlibras.esm.js",
   "module": "dist/vue-vlibras.esm.js",
