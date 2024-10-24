@@ -1,6 +1,6 @@
 {
   "name": "@vue-a11y/vlibras",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "files": [
     "dist"
@@ -13,6 +13,20 @@
       "require": "./dist/vue-vlibras.umd.cjs"
     }
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-a11y/vue-vlibras.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vue-a11y/vue-vlibras/issues"
+  },
+  "homepage": "https://vue-vlibras.web.app",
+  "keywords": [
+    "vue",
+    "vlibras",
+    "accessibility",
+    "a11y"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
