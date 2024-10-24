@@ -43,6 +43,12 @@ No seu App.vue
 </template>
 ```
 
+### Suporte para Vue 2
+
+Se você está utilizando Vue 2 em seus projetos, também pode integrar facilmente o VLibras! A versão específica para Vue 2 do componente está disponível [aqui](https://github.com/vue-a11y/vue-vlibras/tree/vue-2), mantendo a mesma funcionalidade e acessibilidade que a versão para Vue 3.
+
+Confira o repositório no GitHub para mais detalhes e instruções sobre como integrar o VLibras no seu projeto Vue 2!
+
 ## Contribuindo
 
 - De erros de digitação na documentação à codificação de novos recursos;
