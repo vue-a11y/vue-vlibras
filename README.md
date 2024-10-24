@@ -1,7 +1,7 @@
-# vlibras (Para Vue3)
+# vlibras
 Componente Vue.js que ajuda você a implementar o VLibras no seu site.
 
-Demo: https://vue3-vlibras.surge.sh/
+Demo: https://vue-vlibras.web.app
 
 Esse componente segue os padrões fornecidos na [documentação do vlibras](https://www.vlibras.gov.br/doc/widget/index.html).
 
