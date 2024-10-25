@@ -1140,10 +1140,10 @@ normalize-package-data@^3.0.0:
     semver "^7.3.4"
     validate-npm-package-license "^3.0.1"
 
-nucleus-vue@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/nucleus-vue/-/nucleus-vue-0.0.6.tgz"
-  integrity sha512-yuKwZb/Ws3pvRTuws9FSWfKCH+HY+BJzwWK7/s23RbyPv6sDB9Sp0bkJ5SNLrCOOmgWITSdTexaUFyjBZ5o26A==
+nucleus-vue@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/nucleus-vue/-/nucleus-vue-0.0.7.tgz"
+  integrity sha512-SJB1zwo+1VWUxT0O4cx3EopF/jZE+ARaDZESRpCUdNMzxePfruBxaOBpMPTd6YyYAuThsT/wDE/1y+iIfdtPeA==
 
 p-limit@^1.1.0:
   version "1.3.0"
