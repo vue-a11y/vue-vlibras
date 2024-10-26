@@ -1,17 +1,16 @@
 <script setup>
-import Nucleus, { NucleusCode } from 'nucleus-vue';
+import Nucleus, { NucleusCode, NucleusBox } from 'nucleus-vue';
 import { configApp } from './App.config';
 </script>
 
 <template>
   <Nucleus :config="configApp">
     <VLibras />
-    <div class="content example">
-      <h2>Usage Example</h2>
-
+    <NucleusBox class="example" title="Usage Example">
       <h3>Widget Position</h3>
       <p>You can set the widget's position using the <code>position</code> prop. For example:</p>
-      <NucleusCode language="tsx">{{ `<VLibras position="left" />` }}</NucleusCode>
+      <NucleusCode language="tsx">{{ `<VLibras position="left" />` }}
+      </NucleusCode>
 
       <h3>Available Position Types</h3>
       <p>The position options that can be used are:</p>
@@ -28,7 +27,8 @@ import { configApp } from './App.config';
 
       <h3>Avatar</h3>
       <p>You can select the widget's avatar using the <code>avatar</code> prop. Example:</p>
-      <NucleusCode language="tsx">{{ `<VLibras avatar="hosana" />` }}</NucleusCode>
+      <NucleusCode language="tsx">{{ `<VLibras avatar="hosana" />` }}
+      </NucleusCode>
 
       <h3>Available Avatar Options</h3>
       <ul>
@@ -40,8 +40,9 @@ import { configApp } from './App.config';
 
       <h3>Opacity</h3>
       <p>To adjust the widget's opacity, use the <code>opacity</code> prop:</p>
-      <NucleusCode language="tsx">{{ `<VLibras opacity="0.8" />` }}</NucleusCode>
-    </div>
+      <NucleusCode language="tsx">{{ `<VLibras opacity="0.8" />` }}
+      </NucleusCode>
+    </NucleusBox>
 
   </Nucleus>
 </template>
@@ -71,7 +72,7 @@ import { configApp } from './App.config';
     color: var(--primary);
     font-weight: bold;
   }
-  
+
   code {
     margin-bottom: 1rem;
   }
